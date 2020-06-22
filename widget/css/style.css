@@ -1,0 +1,396 @@
+@charset "UTF-8";
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background: #234278;
+    position:relative;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* flex布局 */
+
+.ren-flex, .ren-flex-sb, .ren-flex-sa, .ren-flex-ac, .ren-flex-ce {
+    display: flex;
+}
+
+.ren-flex-sb {
+    justify-content: space-between;
+}
+
+.ren-flex-sa {
+    justify-content: space-around;
+}
+
+.ren-flex-ce {
+    justify-content: center;
+}
+
+.ren-flex-ac {
+    align-items: center;
+}
+
+.dataContainer {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background: url('../image/dataBg.jpg') no-repeat center top;
+    background-size: 100% 100%;
+    overflow: hidden;
+    padding-top:8vh;
+}
+.globalTitle{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:8vh;
+  line-height:8.6vh;
+  overflow:hidden;
+  text-align:center;
+  font-size:1.6vw;
+  color:#2accfd;
+  font-weight:bold;
+}
+.dataLeftMain{
+  width:26.5vw;
+  float:left;
+  padding-left:1.666vw;
+  box-sizing:border-box;
+}
+.dataMiddleMain{
+  width:47vw;
+  float:left;
+  position:relative;
+}
+.dataRightMain{
+  width:26.5vw;
+  float:left;
+  padding-right:1.666vw;
+  box-sizing:border-box;
+}
+.dataTitleMain{
+  height:2.4vh;
+  width:100%;
+  background:url('../image/titleBgImg.png') no-repeat left top;
+  background-size:18vw 2.4vh;
+  font-size:1.05vw;
+  color:#ffa200;
+  line-height:2vh;
+  text-indent:4.2vw;
+}
+.dataTopRankBox{
+  height:57vh;
+  width:100%;
+}
+.dataSubChartBox{
+  height:26vh;
+  width:100%;
+  position:relative;
+  padding-top:2vh;
+}
+.dataSubChartBox>span{
+  font-size:0.8vw;
+  color:#00f2f1;
+  position:absolute;
+  right:0;
+  top:1vh;
+}
+.personalRankBox{
+  overflow-x:hidden;
+  position:relative;
+}
+.personalRankBox .pRankNum{
+   width:2.7vw;
+   float:left;
+   text-align:center;
+}
+.personalRankBox .pRankTrade{
+  width:12vw;
+  float:left;
+}
+.personalRankBox .pRankActive{
+  width:10vw;
+  float:left;
+}
+.personalRankBox .pRankNum p{
+  font-size:0.9vw;
+  color:#ffa200;
+  line-height:5.2vh;
+  height:5.2vh;
+}
+.pRankTrade ul{
+  padding-top:1.2vh;
+}
+.pRankTrade ul li{
+   overflow:hidden;
+   line-height:5.2vh;
+   height:5.2vh;
+   font-size:0.9vw;
+   color:#9fceff;
+   border-bottom:0.052vw dashed #0090ff;
+   border-right:0.052vw dashed #0090ff;
+}
+.pRankTrade ul li:first-of-type{
+  height:4vh;
+  overflow:hidden;
+  line-height:3.2vh;
+}
+.pRankTrade ul li:last-of-type{
+  border-bottom:none;
+  height:4vh;
+  overflow:hidden;
+}
+.pRankTrade ul li span{
+  float:left;
+}
+.pRankTrade ul li em{
+  float:right;
+  padding-right:0.68vw;
+}
+.pRankActive ul{
+  padding-top:1.2vh;
+}
+.pRankActive ul li{
+  overflow:hidden;
+  line-height:5.2vh;
+  height:5.2vh;
+  font-size:0.9vw;
+  color:#9fceff;
+  border-bottom:0.052vw dashed #0090ff;
+}
+.pRankActive ul li:first-of-type{
+  height:4vh;
+  overflow:hidden;
+  line-height:3.2vh;
+}
+.pRankActive ul li:last-of-type{
+  border:none;
+  height:4vh;
+  overflow:hidden;
+}
+.pRankActive ul li:last-of-type{
+  border:none;
+  height:4vh;
+  overflow:hidden;
+}
+.pRankActive ul li span{
+  float:left;
+  padding-left:0.68vw;
+}
+.pRankActive ul li em{
+  float:right;
+  padding-right:0.68vw;
+}
+
+.pBoxMain{
+  overflow:hidden;
+}
+.pBoxMain .newpRankNum{
+   width:2.7vw;
+   float:left;
+   text-align:center;
+   overflow:hidden;
+   border-bottom:0.052vw dashed #0090ff;
+   border-right:0.052vw dashed #0090ff;
+   line-height:5.2vh;
+   height:5.2vh;
+}
+.pBoxMain .newpRankTrade{
+  width:12vw;
+  float:left;
+  overflow:hidden;
+  border-bottom:0.052vw dashed #0090ff;
+  border-right:0.052vw dashed #0090ff;
+  line-height:5.2vh;
+  height:5.2vh;
+}
+.pBoxMain .newpRankActive{
+  width:10vw;
+  float:left;
+  overflow:hidden;
+  border-bottom:0.052vw dashed #0090ff;
+  line-height:5.2vh;
+  height:5.2vh;
+}
+.pBoxMain .newpRankNum p{
+  font-size:0.9vw;
+  color:#ffa200;
+  line-height:5.2vh;
+  height:5.2vh;
+}
+.pBoxMain .newpRankTrade span{
+    float:left;
+    font-size:0.9vw;
+    color:#9fceff;
+    padding-left:0.68vw;
+}
+.pBoxMain .newpRankTrade em{
+    float:right;
+    padding-right:0.68vw;
+    font-size:0.9vw;
+    color:#9fceff;
+
+}
+.pBoxMain .newpRankActive span{
+    float:left;
+    font-size:0.9vw;
+    color:#9fceff;
+    padding-left:0.68vw;
+}
+.pBoxMain .newpRankActive em{
+    float:right;
+    padding-right:0.68vw;
+    font-size:0.9vw;
+    color:#9fceff;
+}
+.teamRankBox{
+  overflow:hidden;
+  padding-top:2vh;
+}
+/*
+.tRankNum{
+  width:2.7vw;
+  float:left;
+}
+.tRankNum p{
+  font-size:0.9vw;
+  color:#ffa200;
+  line-height:5.2vh;
+  height:5.2vh;
+}
+.tRankList{
+  width:21.8vw;
+  float:left;
+}
+.tRankList ul li{
+  overflow:hidden;
+  line-height:5.2vh;
+  height:5.2vh;
+  font-size:0.9vw;
+  color:#9fceff;
+  border-bottom:0.052vw dashed #0090ff;
+}
+.tRankList ul li:last-of-type{
+  border:none;
+}
+.tRankList ul li span{
+  display:block;
+  width:25%;
+  float:left;
+  text-align:left;
+}
+.tRankList ul li i{
+  font-style:normal;
+  display:block;
+  width:41%;
+  float:left;
+  text-align:center;
+}
+.tRankList ul li em{
+  font-style:normal;
+  display:block;
+  width:33%;
+  float:left;
+  text-align:center;
+}*/
+.dataMiddleTopTab{
+  padding:1.5vh 3.65vw 0;
+}
+.dataMiddleTopTab a{
+   display:block;
+   width:9.9vw;
+   height:4.5vh;
+   background-image:url('../image/tabBgImg.png');
+   background-position:left 0;
+   background-size:19.8vw 4.5vh;
+   background-repeat: no-repeat;
+   font-size:1.2vw;
+   color:#23cefd;
+   font-weight:bold;
+   line-height:4.5vh;
+   text-align:center;
+   text-indent:-1vw;
+}
+.dataMiddleTopTab a.active{
+  background-position:-9.9vw 0;
+  color:#fff;
+}
+.dataMiddleTopNum{
+  text-align:center;
+  color:#23c4fd;
+  font-size:1vw;
+  font-weight:bold;
+  padding-top:3.5vh;
+  letter-spacing:0.4vw;
+  font-family:"dkFont";
+}
+.dataMiddleTopNum span{
+  font-size:4vw;
+  color:#23c4fd;
+}
+.totalActiveNum{
+   font-size:4vw;
+   position:absolute;
+   left:50%;
+   top:41vh;
+   width:100%;
+   margin-left:-50%;
+   text-align:center;
+   color:#fff;
+   font-weight:bold;
+   font-family:"dkFont";
+   letter-spacing:0.2vw;
+}
+.totalActiveTitle{
+  font-size:1.2vw;
+  position:absolute;
+  left:50%;
+  top:58.7vh;
+  width:100%;
+  margin-left:-50%;
+  color:#2acaff;
+  text-align:center;
+}
+.dayActiveBox{
+  position:absolute;
+  left:10.3vw;
+  top:76.7vh;
+  width:6.15vw;
+  height:6.67vh;
+  color:#e49213;
+  text-align:center;
+}
+.dayActiveBox p{
+  font-size:1vw;
+}
+.dayActiveBox h3{
+  font-size:1.4vw;
+  font-family:"dkFont";
+}
+.monthActiveBox{
+  position:absolute;
+  right:10.65vw;
+  top:76.7vh;
+  width:6.15vw;
+  height:6.67vh;
+  color:#e49213;
+  text-align:center;
+}
+.monthActiveBox p{
+  font-size:1vw;
+}
+.monthActiveBox h3{
+  font-size:1.4vw;
+}
