@@ -37,360 +37,384 @@ img {
 .ren-flex-ac {
     align-items: center;
 }
-
+.boxBg{
+  background: url("../image/itemBgTop.png") no-repeat top center,
+              url("../image/itemBgSub.png") no-repeat bottom center,
+              url("../image/itemBgMiddle.png") repeat-y;
+  background-size:100% auto;
+}
+.boxBgLong{
+  background: url("../image/itemBgTopLong.png") no-repeat top center,
+              url("../image/itemBgSubLong.png") no-repeat bottom center,
+              url("../image/itemBgMiddleLong.png") repeat-y;
+  background-size:100% auto;
+}
 .dataContainer {
     position: fixed;
-    left: 0;
+    left:0;
     top: 0;
-    width: 100%;
-    height: 100%;
+    padding:0 1vw;
+    width:100%;
+    height:100%;
+    box-sizing:border-box;
     z-index: 999;
-    background: url('../image/dataBg.jpg') no-repeat center top;
-    background-size: 100% 100%;
+    background:#181834;
     overflow: hidden;
-    padding-top:8vh;
 }
-.globalTitle{
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:8vh;
-  line-height:8.6vh;
-  overflow:hidden;
-  text-align:center;
-  font-size:1.6vw;
-  color:#2accfd;
-  font-weight:bold;
-}
-.dataLeftMain{
-  width:26.5vw;
-  float:left;
-  padding-left:1.666vw;
-  box-sizing:border-box;
-}
-.dataMiddleMain{
-  width:47vw;
-  float:left;
-  position:relative;
-}
-.dataRightMain{
-  width:26.5vw;
-  float:left;
-  padding-right:1.666vw;
-  box-sizing:border-box;
-}
-.dataTitleMain{
-  height:2.4vh;
-  width:100%;
-  background:url('../image/titleBgImg.png') no-repeat left top;
-  background-size:18vw 2.4vh;
-  font-size:1.05vw;
-  color:#ffa200;
-  line-height:2vh;
-  text-indent:4.2vw;
-}
-.dataTopRankBox{
-  height:57vh;
-  width:100%;
-}
-.dataSubChartBox{
-  height:26vh;
-  width:100%;
-  position:relative;
-  padding-top:2vh;
-}
-.dataSubChartBox>span{
-  font-size:0.8vw;
-  color:#00f2f1;
-  position:absolute;
-  right:0;
-  top:1vh;
-}
-.personalRankBox{
-  overflow-x:hidden;
-  position:relative;
-}
-.personalRankBox .pRankNum{
-   width:2.7vw;
-   float:left;
-   text-align:center;
-}
-.personalRankBox .pRankTrade{
-  width:12vw;
-  float:left;
-}
-.personalRankBox .pRankActive{
-  width:10vw;
-  float:left;
-}
-.personalRankBox .pRankNum p{
-  font-size:0.9vw;
-  color:#ffa200;
-  line-height:5.2vh;
-  height:5.2vh;
-}
-.pRankTrade ul{
-  padding-top:1.2vh;
-}
-.pRankTrade ul li{
-   overflow:hidden;
-   line-height:5.2vh;
-   height:5.2vh;
-   font-size:0.9vw;
-   color:#9fceff;
-   border-bottom:0.052vw dashed #0090ff;
-   border-right:0.052vw dashed #0090ff;
-}
-.pRankTrade ul li:first-of-type{
-  height:4vh;
-  overflow:hidden;
-  line-height:3.2vh;
-}
-.pRankTrade ul li:last-of-type{
-  border-bottom:none;
-  height:4vh;
-  overflow:hidden;
-}
-.pRankTrade ul li span{
-  float:left;
-}
-.pRankTrade ul li em{
-  float:right;
-  padding-right:0.68vw;
-}
-.pRankActive ul{
-  padding-top:1.2vh;
-}
-.pRankActive ul li{
-  overflow:hidden;
-  line-height:5.2vh;
-  height:5.2vh;
-  font-size:0.9vw;
-  color:#9fceff;
-  border-bottom:0.052vw dashed #0090ff;
-}
-.pRankActive ul li:first-of-type{
-  height:4vh;
-  overflow:hidden;
-  line-height:3.2vh;
-}
-.pRankActive ul li:last-of-type{
-  border:none;
-  height:4vh;
-  overflow:hidden;
-}
-.pRankActive ul li:last-of-type{
-  border:none;
-  height:4vh;
-  overflow:hidden;
-}
-.pRankActive ul li span{
-  float:left;
-  padding-left:0.68vw;
-}
-.pRankActive ul li em{
-  float:right;
-  padding-right:0.68vw;
-}
-
-.pBoxMain{
-  overflow:hidden;
-}
-.pBoxMain .newpRankNum{
-   width:2.7vw;
-   float:left;
-   text-align:center;
-   overflow:hidden;
-   border-bottom:0.052vw dashed #0090ff;
-   border-right:0.052vw dashed #0090ff;
-   line-height:5.2vh;
-   height:5.2vh;
-}
-.pBoxMain .newpRankTrade{
-  width:12vw;
-  float:left;
-  overflow:hidden;
-  border-bottom:0.052vw dashed #0090ff;
-  border-right:0.052vw dashed #0090ff;
-  line-height:5.2vh;
-  height:5.2vh;
-}
-.pBoxMain .newpRankActive{
-  width:10vw;
-  float:left;
-  overflow:hidden;
-  border-bottom:0.052vw dashed #0090ff;
-  line-height:5.2vh;
-  height:5.2vh;
-}
-.pBoxMain .newpRankNum p{
-  font-size:0.9vw;
-  color:#ffa200;
-  line-height:5.2vh;
-  height:5.2vh;
-}
-.pBoxMain .newpRankTrade span{
-    float:left;
-    font-size:0.9vw;
-    color:#9fceff;
-    padding-left:0.68vw;
-}
-.pBoxMain .newpRankTrade em{
-    float:right;
-    padding-right:0.68vw;
-    font-size:0.9vw;
-    color:#9fceff;
-
-}
-.pBoxMain .newpRankActive span{
-    float:left;
-    font-size:0.9vw;
-    color:#9fceff;
-    padding-left:0.68vw;
-}
-.pBoxMain .newpRankActive em{
-    float:right;
-    padding-right:0.68vw;
-    font-size:0.9vw;
-    color:#9fceff;
-}
-.teamRankBox{
-  overflow:hidden;
-  padding-top:2vh;
-}
-/*
-.tRankNum{
-  width:2.7vw;
-  float:left;
-}
-.tRankNum p{
-  font-size:0.9vw;
-  color:#ffa200;
-  line-height:5.2vh;
-  height:5.2vh;
-}
-.tRankList{
-  width:21.8vw;
-  float:left;
-}
-.tRankList ul li{
-  overflow:hidden;
-  line-height:5.2vh;
-  height:5.2vh;
-  font-size:0.9vw;
-  color:#9fceff;
-  border-bottom:0.052vw dashed #0090ff;
-}
-.tRankList ul li:last-of-type{
-  border:none;
-}
-.tRankList ul li span{
+.dataHeaderMain img{
   display:block;
-  width:25%;
+}
+.dataBodyMain{
+  position:relative;
+  z-index:999;
+}
+.dataBodyLeftBox{
+  width:29vw;
   float:left;
+  margin-top:-4vh;
+}
+.dataBodyMiddleBox{
+  height:87vh;
+  width:38vw;
+  float:left;
+  margin-left:1vw;
+  position:relative;
+}
+.dataBodyRightBox{
+  width:29vw;
+  float:right;
+  margin-top:-4vh;
+}
+.dataBodyLeftTop{
+  height:13vh;
+}
+.dataBodyLeftTop>div{
+  width:100%;
   text-align:left;
+  padding-left:7%;
+  box-sizing:border-box;
 }
-.tRankList ul li i{
-  font-style:normal;
-  display:block;
-  width:41%;
-  float:left;
-  text-align:center;
-}
-.tRankList ul li em{
-  font-style:normal;
-  display:block;
-  width:33%;
-  float:left;
-  text-align:center;
-}*/
-.dataMiddleTopTab{
-  padding:1.5vh 3.65vw 0;
-}
-.dataMiddleTopTab a{
-   display:block;
-   width:9.9vw;
-   height:4.5vh;
-   background-image:url('../image/tabBgImg.png');
-   background-position:left 0;
-   background-size:19.8vw 4.5vh;
-   background-repeat: no-repeat;
-   font-size:1.2vw;
-   color:#23cefd;
-   font-weight:bold;
-   line-height:4.5vh;
-   text-align:center;
-   text-indent:-1vw;
-}
-.dataMiddleTopTab a.active{
-  background-position:-9.9vw 0;
+.dataBodyLeftTop>div h3{
+  font-size:1.6vw;
   color:#fff;
 }
-.dataMiddleTopNum{
-  text-align:center;
-  color:#23c4fd;
-  font-size:1vw;
-  font-weight:bold;
-  padding-top:3.5vh;
-  letter-spacing:0.4vw;
-  font-family:"dkFont";
+.dataBodyLeftTop>div p{
+  font-size:0.9vw;
+  color:#fff;
+  position:relative;
+  padding-left:0.7vw;
 }
-.dataMiddleTopNum span{
-  font-size:4vw;
-  color:#23c4fd;
+.dataBodyLeftTop>div p::before{
+  content:"";
+  display:block;
+  width:0.36vw;
+  height:1.4vh;
+  background:#f33;
+  border-radius:1vw;
+  position:absolute;
+  left:0;
+  top:50%;
+  margin-top:-0.7vh;
 }
-.totalActiveNum{
-   font-size:4vw;
-   position:absolute;
-   left:50%;
-   top:41vh;
-   width:100%;
-   margin-left:-50%;
-   text-align:center;
-   color:#fff;
-   font-weight:bold;
-   font-family:"dkFont";
-   letter-spacing:0.2vw;
+.dataBodyLeftTop>div p.equipment::before{
+  background:#1973eb;
 }
-.totalActiveTitle{
+.dataBodyLeftTop>div p.monthTrade::before{
+  background:#6fd1c2;
+}
+.dataBodyLeftTop>div p.monthActive::before{
+  background:#f33;
+}
+.dataBodyLeftMiddle{
+  height:39.4vh;
+  margin-top:2vh;
+}
+.dataBodyLeftMiddle>h3{
   font-size:1.2vw;
+  color:#fff;
+  padding:2vh 0 0 2vw;
+}
+.dataBodyLeftSub{
+  height:31.2vh;
+  margin-top:2vh;
+}
+.dataBodyMiddleTop{
+  height:50vh;
+}
+.dataBodyMiddleTop h3{
+  font-size:1.2vw;
+  color:#fff;
+  padding:0.5vh 0 1vh;
+}
+.dataBodyMiddleTop h3 img{
+  width:1.5vw;
+  height:1.5vw;
+  display:block;
+  margin-right:0.3vw;
+}
+
+.dataBodyMiddleSub{
   position:absolute;
-  left:50%;
-  top:58.7vh;
+  left:-30vw;
+  bottom:0;
+  width:68vw;
+  height:34.5vh;
+  margin-top:2vh;
+}
+.dataBodyMiddleSub>h3{
+   font-size:1.2vw;
+   color:#fff;
+   padding:3vh 0 0 2vw;
+}
+.dataBodyMiddleSubBox{
+  overflow:hidden;
+}
+.dataBodyMiddleSubBoxLeft{
+  width:55vw;
+  float:left;
+}
+.dataBodyMiddleSubBoxRight{
+  width:10vw;
+  float:right;
+  margin-right:1.7vw;
+}
+.dataBodyMiddleSubBoxRightBox{
+  background:#101126;
+  padding-bottom:4vh;
+  border-radius:0 2vw 0 2vw;
+}
+.dataBodyMiddleSubBoxRightBox>div{
+  text-align:center;
+  padding-top:5vh;
+}
+.dataBodyMiddleSubBoxRightBox>div h3{
+  font-size:1.6vw;
+  color:#fff;
+}
+.dataBodyMiddleSubBoxRightBox>div p{
+  font-size:0.9vw;
+  color:#fff;
+  position:relative;
+}
+.dataBodyMiddleSubBoxRightBox>div p::before{
+  content:"";
+  display:block;
+  width:0.36vw;
+  height:1.4vh;
+  background:#f33;
+  border-radius:1vw;
+  position:absolute;
+  left:2.6vw;
+  top:50%;
+  margin-top:-0.7vh;
+}
+.dataBodyMiddleSubBoxRightBox>div p.active::before{
+  background:#f33;
+}
+.dataBodyMiddleSubBoxRightBox>div p.trade::before{
+  background:#e2d50d;
+}
+.dataBodyRightTop{
+  height:15vh;
+}
+.dataBodyRightTop>h1{
+  font-size:1.6vw;
+  color:#fff;
+  padding-left:1.9vw;
+  padding-top:1.6vh;
+}
+.dataBodyRightTop .dataBodyRightTopBox{
+  padding-top:1vh;
+}
+.dataBodyRightTop .dataBodyRightTopBox>div{
   width:100%;
-  margin-left:-50%;
-  color:#2acaff;
-  text-align:center;
+  text-align:left;
+  padding-left:7%;
+  box-sizing:border-box;
 }
-.dayActiveBox{
+.dataBodyRightTop .dataBodyRightTopBox>div h3{
+  font-size:1.6vw;
+  color:#fff;
+}
+.dataBodyRightTop .dataBodyRightTopBox>div p{
+  font-size:0.9vw;
+  color:#fff;
+  position:relative;
+  padding-left:0.7vw;
+}
+.dataBodyRightTop .dataBodyRightTopBox>div p::before{
+  content:"";
+  display:block;
+  width:0.36vw;
+  height:1.4vh;
+  background:#f33;
+  border-radius:1vw;
   position:absolute;
-  left:10.3vw;
-  top:76.7vh;
-  width:6.15vw;
-  height:6.67vh;
-  color:#e49213;
-  text-align:center;
+  left:0;
+  top:50%;
+  margin-top:-0.7vh;
 }
-.dayActiveBox p{
+.dataBodyRightTop .dataBodyRightTopBox>div p.yellow::before{
+  background:#e2d50d;
+}
+.dataBodyRightMiddle{
+  height:37.6vh;
+  margin-top:2vh;
+}
+.dataBodyRightSub{
+  height:34.5vh;
+  margin-top:2vh;
+}
+/*设备监控*/
+.equipmentWatchMain{
+  padding:0 0.2vw;
+}
+.equipmentWatchHeader{
+ height:3.8vh;
+ line-height:3.8vh;
+ background:rgba(47,47,71,0.6);
+ font-size:0.9vw;
+ color:#fff;
+ margin-top:1vh;
+ overflow:hidden;
+}
+.equipmentWatchHeader>span{
+  display:block;
+  padding-left:2vw;
+  width:9vw;
+  float:left;
+}
+.equipmentWatchHeader>em{
+  display:block;
+  width:12.9vw;
+  float:left;
+}
+.equipmentWatchHeader>i{
+  display:block;
+  width:6.3vw;
+  float:left;
+}
+.equipmentWatchBody{
+  height:27vh;
+  overflow-x:hidden;
+}
+.equipmentWatchList li{
+  height:3.5vh;
+  line-height:3.5vh;
+  font-size:0.8vw;
+  color:#fff;
+  margin-top:1vh;
+  overflow:hidden;
+}
+.equipmentWatchList li>span{
+  display:block;
+  padding-left:2vw;
+  width:9vw;
+  float:left;
+}
+.equipmentWatchList li>em{
+  display:block;
+  width:12.9vw;
+  float:left;
+  padding-right:1vw;
+  box-sizing:border-box;
+}
+.equipmentWatchList li>i{
+  display:block;
+  width:6.3vw;
+  float:left;
+}
+/*部门业绩*/
+.dataBodyRightMiddleHeader{
+  overflow:hidden;
+  padding-top:2vh;
+  padding-right:1vw;
+}
+.dataBodyRightMiddleHeader>div{
+   width:20%;
+   float:left;
+   height:4vh;
+   line-height:4vh;
+   font-size:0.9vw;
+   color:#4d7a97;
+   text-align:center;
+}
+.dataBodyRightMiddleItem{
+  overflow:hidden;
+  padding-right:1vw;
+}
+.dataBodyRightMiddleItem>div{
+  width:20%;
+  float:left;
+  height:6vh;
+  line-height:6vh;
+  font-size:0.9vw;
+  color:#4d7a97;
+  text-align:center;
+  font-weight:bold;
+}
+.dataBodyRightMiddleItem>div.bm{
+  font-weight:500;
+}
+/*当月交易激活排行*/
+.dataBodyRightSubHeader{
+  overflow:hidden;
+  padding-top:3vh;
+  padding-right:1vw;
+  color:#fff;
+  line-height:2vh;
+}
+.dataBodyRightSubHeader>h3{
+  width:30%;
+  float:left;
+  padding-left:2vw;
+  box-sizing:border-box;
+  font-size:1.2vw;
+}
+.dataBodyRightSubHeader>span{
+  display:block;
+  width:35%;
+  float:left;
   font-size:1vw;
 }
-.dayActiveBox h3{
+.rankItem{
+  overflow:hidden;
+}
+.rankImg{
+  width:30%;
+  float:left;
+  padding-top:3.4vh;
+}
+.rankImg img{
+  width:30%;
+  display:block;
+  margin:0 auto;
+}
+.rankTrade{
+  width:35%;
+  float:left;
+}
+.rankActive{
+  width:35%;
+  float:left;
+}
+.rankTrade p:first-of-type{
   font-size:1.4vw;
-  font-family:"dkFont";
+  line-height:1.4vw;
+  padding:3vh 0 1vh;
 }
-.monthActiveBox{
-  position:absolute;
-  right:10.65vw;
-  top:76.7vh;
-  width:6.15vw;
-  height:6.67vh;
-  color:#e49213;
-  text-align:center;
+.rankTrade p{
+  font-size:1.2vw;
+  color:#fff;
+  line-height:1.2vw;
 }
-.monthActiveBox p{
-  font-size:1vw;
-}
-.monthActiveBox h3{
+.rankActive p:first-of-type{
   font-size:1.4vw;
+  line-height:1.4vw;
+  padding:3vh 0 1vh;
+}
+.rankActive p{
+  font-size:1.2vw;
+  color:#fff;
+  line-height:1.2vw;
 }
