@@ -247,6 +247,30 @@
 			if (ret.body) {
 				if (ret.body.code === 200) {
 					var datas = ret.body.data;
+					//第四部分数据
+					var partFourData = datas.partFour;
+					//呼和浩特到其他城市数据
+					var hhhtName = partFourData[1].name;
+					var hhhtArray = partFourData[1].datainfo;
+					var HhhtData = [];
+					hhhtArray.forEach(function(item){
+							HhhtData.push([{name:hhhtName},item]);
+					})
+					//北京到其他城市数据
+					var bjName = partFourData[0].name;
+					var bjArray = partFourData[0].datainfo;
+					var BJData = [];
+					bjArray.forEach(function(item){
+							BJData.push([{name:bjName},item]);
+					})
+					//上海到其他城市数据
+					var shName = partFourData[2].name;
+					var shArray = partFourData[2].datainfo;
+					var SHData = [];
+					shArray.forEach(function(item){
+							SHData.push([{name:shName},item]);
+					})
+					mapTap(HhhtData,SHData,BJData);
 					//第六部分数据
 					var partSixData = datas.partSix;
 					var interText = doT.template($("#personalResults").text());
@@ -310,30 +334,6 @@
 					drawLine('lineChartTrade', dataX, dataY, true);
 					dynNum('dayDeal', partThreeData.dayDealInfo.dayDeal.totals, 2, false);
 					scrollNum('#dayActivated', partThreeData.dayDealInfo.dayActivated.totals);
-					//第四部分数据
-					var partFourData = datas.partFour;
-					//呼和浩特到其他城市数据
-					var hhhtName = partFourData[1].name;
-					var hhhtArray = partFourData[1].datainfo;
-					var HhhtData = [];
-					hhhtArray.forEach(function(item){
-							HhhtData.push([{name:hhhtName},item]);
-					})
-					//北京到其他城市数据
-					var bjName = partFourData[0].name;
-					var bjArray = partFourData[0].datainfo;
-					var BJData = [];
-					bjArray.forEach(function(item){
-							BJData.push([{name:bjName},item]);
-					})
-					//上海到其他城市数据
-					var shName = partFourData[2].name;
-					var shArray = partFourData[2].datainfo;
-					var SHData = [];
-					shArray.forEach(function(item){
-							SHData.push([{name:shName},item]);
-					})
-					mapTap(HhhtData,SHData,BJData);
 					//第五部分数据
 					var partFiveData = datas.partFive;
 					var interText = doT.template($("#teamResults").text());
