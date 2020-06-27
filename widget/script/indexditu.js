@@ -126,59 +126,11 @@ var geoCoordMap = {
 
 };
 
-// var HhhtData = [
-//     [{name:'呼和浩特'}, {name:'包头',value:15}],
-//     [{name:'呼和浩特'}, {name:'赤峰',value:15}],
-//     [{name:'呼和浩特'}, {name:'太原',value:10}],
-//     [{name:'呼和浩特'}, {name:'张家口',value:20}],
-//     [{name:'呼和浩特'}, {name:'四子王旗',value:30}]
-//
-// ];
-//
-// var SHData = [
-//     [{name:'上海'},{name:'呼和浩特',value:40}],
-//     [{name:'上海'},{name:'包头',value:40}],
-//     [{name:'上海'},{name:'赤峰',value:30}],
-//     [{name:'上海'},{name:'四子王旗',value:25}],
-//     [{name:'上海'},{name:'张家口',value:20}],
-//     [{name:'上海'},{name:'四子王旗',value:20}]
-// ];
-var HhhtData = [
-    [{name:'呼和浩特'}, {name:'上海',value:15}],
-    [{name:'呼和浩特'}, {name:'广州',value:15}],
-    [{name:'呼和浩特'}, {name:'西宁',value:10}],
-    [{name:'呼和浩特'}, {name:'南宁',value:20}],
-    [{name:'呼和浩特'}, {name:'南昌',value:30}],
-    [{name:'呼和浩特'}, {name:'拉萨',value:40}],
-    [{name:'呼和浩特'}, {name:'天津',value:40}],
-    [{name:'呼和浩特'}, {name:'乌鲁木齐',value:30}],
-    [{name:'呼和浩特'}, {name:'厦门',value:20}],
-    [{name:'呼和浩特'}, {name:'常州',value:10}],
-    [{name:'呼和浩特'}, {name:'赤峰',value:30}],
-    [{name:'呼和浩特'}, {name:'青岛',value:30}]
-];
+var HhhtData = [];
 
-var SHData = [
-    [{name:'上海'},{name:'包头',value:40}],
-    [{name:'上海'},{name:'昆明',value:40}],
-    [{name:'上海'},{name:'广州',value:30}],
-    [{name:'上海'},{name:'郑州',value:25}],
-    [{name:'上海'},{name:'哈尔滨',value:20}],
-    [{name:'上海'},{name:'重庆',value:20}],
-    [{name:'上海'},{name:'长沙',value:25}],
-    [{name:'上海'},{name:'丹东',value:10}]
-];
+var SHData = [];
 
-var GZData = [
-    [{name:'广州'},{name:'福州',value:50}],
-    [{name:'广州'},{name:'太原',value:40}],
-    [{name:'广州'},{name:'长春',value:40}],
-    [{name:'广州'},{name:'张家口',value:40}],
-    [{name:'广州'},{name:'西安',value:30}],
-    [{name:'广州'},{name:'成都',value:30}],
-    [{name:'广州'},{name:'常州',value:20}],
-    [{name:'广州'},{name:'海口',value:10}]
-];
+var BJData = [];
 // var planePath = 'path://M1705.06,1318.313v-89.254l-319.9-221.799l0.073-208.063c0.521-84.662-26.629-121.796-63.961-121.491c-37.332-0.305-64.482,36.829-63.961,121.491l0.073,208.063l-319.9,221.799v89.254l330.343-157.288l12.238,241.308l-134.449,92.931l0.531,42.034l175.125-42.917l175.125,42.917l0.531-42.034l-134.449-92.931l12.238-241.308L1705.06,1318.313z';
 
 var convertData = function (data) {
@@ -200,7 +152,7 @@ var convertData = function (data) {
 
 var color = ['#a6c84c', '#ffa022', '#46bee9'];
 var series = [];
-[['呼和浩特', HhhtData], ['上海', SHData], ['广州', GZData]].forEach(function (item, i) {
+[['呼和浩特', HhhtData], ['上海', SHData], ['北京', BJData]].forEach(function (item, i) {
     series.push({
             name: item[0],
             type: 'lines',

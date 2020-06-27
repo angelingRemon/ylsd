@@ -12,7 +12,7 @@
  * 开源地址：http://git.oschina.net/winu.net/H.js
  */
 //var url="http://pay.lr18.cn/index.php/";
-var url = "http://api.union.nmyd168.com/Tvdata/HkdApi/gateway";
+var url = "http://ljapi.zmos.net/app/Tvdata/index";
 function J(o){
     alert(JSON.stringify(o));
 }
