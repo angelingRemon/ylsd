@@ -1,0 +1,232 @@
+[
+    {
+        "name": "北京",
+        "value": 344,
+        "logogram": "BJ",
+        "coordinate": [
+            "116.387596,39.929101"
+        ],
+        "datainfo": [
+            {
+                "name": "天津",
+                "value": 3,
+                "logogram": "TJ",
+                "coordinate": [
+                    "117.197077,39.016546"
+                ]
+            },
+            {
+                "name": "哈尔滨",
+                "value": 3,
+                "logogram": "HEB",
+                "coordinate": [
+                    "126.524507,45.82172"
+                ]
+            },
+            {
+                "name": "长春",
+                "value": 5,
+                "logogram": "CC",
+                "coordinate": [
+                    "125.365477,43.845223"
+                ]
+            },
+            {
+                "name": "沈阳",
+                "value": 7,
+                "logogram": "SY",
+                "coordinate": [
+                    "125.365477,43.845223"
+                ]
+            },
+            {
+                "name": "石家庄",
+                "value": 7,
+                "logogram": "SJZ",
+                "coordinate": [
+                    "123.433761,41.69028"
+                ]
+            },
+            {
+                "name": "济南",
+                "value": 4,
+                "logogram": "JN",
+                "coordinate": [
+                    "123.433761,41.69028"
+                ]
+            },
+            {
+                "name": "郑州",
+                "value": 6,
+                "logogram": "ZZ",
+                "coordinate": [
+                    "113.646399,34.762519"
+                ]
+            },
+            {
+                "name": "武汉",
+                "value": 3,
+                "logogram": "WH",
+                "coordinate": [
+                    "114.308702,30.625943"
+                ]
+            },
+            {
+                "name": "合肥",
+                "value": 3,
+                "logogram": "HF",
+                "coordinate": [
+                    "117.17868,31.82749"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "呼和浩特",
+        "value": 335,
+        "logogram": "HHHT",
+        "coordinate": [
+            "111.769875,40.8575"
+        ],
+        "datainfo": [
+            {
+                "name": "包头",
+                "value": 5,
+                "logogram": "",
+                "coordinate": [
+                    ""
+                ]
+            },
+            {
+                "name": "鄂尔多斯",
+                "value": 6,
+                "logogram": "",
+                "coordinate": [
+                    ""
+                ]
+            },
+            {
+                "name": "通辽",
+                "value": 3,
+                "logogram": "",
+                "coordinate": [
+                    ""
+                ]
+            },
+            {
+                "name": "锡林浩特",
+                "value": 6,
+                "logogram": "",
+                "coordinate": [
+                    ""
+                ]
+            },
+            {
+                "name": "阿拉善盟",
+                "value": 2,
+                "logogram": "",
+                "coordinate": [
+                    ""
+                ]
+            },
+            {
+                "name": "乌海",
+                "value": 6,
+                "logogram": "",
+                "coordinate": [
+                    ""
+                ]
+            },
+            {
+                "name": "满洲里",
+                "value": 4,
+                "logogram": "MZL",
+                "coordinate": [
+                    "119.766735,49.245949"
+                ]
+            },
+            {
+                "name": "集宁",
+                "value": 6,
+                "logogram": "JN",
+                "coordinate": [
+                    "113.130117,40.998386"
+                ]
+            },
+            {
+                "name": "丽江",
+                "value": 1,
+                "logogram": "LJ",
+                "coordinate": [
+                    "100.224413,26.86272"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "上海",
+        "value": 336,
+        "logogram": "SH",
+        "coordinate": [
+            "121.519284,31.253884"
+        ],
+        "datainfo": [
+            {
+                "name": "南京",
+                "value": 8,
+                "logogram": "NJ",
+                "coordinate": [
+                    "118.75969,32.103479"
+                ]
+            },
+            {
+                "name": "杭州",
+                "value": 5,
+                "logogram": "HZ",
+                "coordinate": [
+                    "120.194679,30.300756"
+                ]
+            },
+            {
+                "name": "长沙",
+                "value": 6,
+                "logogram": "CS",
+                "coordinate": [
+                    "113.019733,28.236056"
+                ]
+            },
+            {
+                "name": "广州",
+                "value": 9,
+                "logogram": "GZ",
+                "coordinate": [
+                    "113.240501,23.137216"
+                ]
+            },
+            {
+                "name": "南宁",
+                "value": 5,
+                "logogram": "NN",
+                "coordinate": [
+                    "113.240501,23.137216"
+                ]
+            },
+            {
+                "name": "南昌",
+                "value": 4,
+                "logogram": "NC",
+                "coordinate": [
+                    "115.852917,28.691295"
+                ]
+            },
+            {
+                "name": "福州",
+                "value": 8,
+                "logogram": "FZ",
+                "coordinate": [
+                    "119.274814,26.063729"
+                ]
+            }
+        ]
+    }
+]
