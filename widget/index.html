@@ -259,12 +259,14 @@
 							})
 							//地图数据  格式:[['呼和浩特', HhhtData], ['上海', SHData], ['北京', BJData]]
 							var mapDataInner = [];
+							var mapDataBig = [];
 							mapDataInner.push(item.name);
 							var innerCityName =  item.name;
 							var innerCityInfo = item.datainfo;
 							innerCityInfo.forEach(function(infoItem){
-									mapDataInner.push([{name:innerCityName},infoItem]);
+									mapDataBig.push([{name:innerCityName},infoItem]);
 							})
+							mapDataInner.push(mapDataBig);
 		          mapData.push(mapDataInner);
 					});
 					mapTap(geoCoordMap,mapData);
