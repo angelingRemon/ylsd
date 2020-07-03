@@ -343,6 +343,12 @@ img {
    color:#fff;
    text-align:center;
 }
+.dataBodyRightMiddleBody{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+  height:29.5vh;
+}
 .dataBodyRightMiddleItem{
   overflow:hidden;
   padding-right:1vw;
@@ -350,8 +356,6 @@ img {
 .dataBodyRightMiddleItem>div{
   width:20%;
   float:left;
-  height:6vh;
-  line-height:6vh;
   font-size:0.9vw;
   color:#fff;
   text-align:center;
